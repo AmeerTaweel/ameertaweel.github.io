@@ -51,7 +51,7 @@
         <div class="row">
           <div class="col-12 text-center pt-5 text-white">
             <h5>Copyright © 2018 Ameer Taweel.</h5>
-            <h6>Java | XML | Android Development | Firebase | HTML5 | CSS3 | JavaScript | Vue.js | Front-End Development</h6>
+            <h6>Java | XML | Android | Firebase | HTML5 | CSS3 | JavaScript | Vue.js | Front-End | Node.js | Back-End </h6>
           </div>
         </div>
       </div>
