@@ -1,9 +1,9 @@
 <template>
-    <div id="project">
+    <div>
         <div class="p-2">
-            <a :href="url" target="_blank">
+            <a :href="url" rel="noopener noreferrer" target="_blank">
                 <div class="position-relative shadow pointer">
-                    <img class="d-block rounded w-100 h-auto" :src="thumb" />
+                    <img class="d-block rounded w-100 h-auto" :src="thumb" :alt="description" />
                     <div class="overlay w-100 h-100 text-white d-flex align-items-center justify-content-center">
                         <div>
                             <h2 class="m-1 font-weight-bold">{{name}}</h2>

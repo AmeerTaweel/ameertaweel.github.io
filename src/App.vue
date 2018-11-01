@@ -21,31 +21,31 @@
       <div class="container-fluid mt-5">
         <div class="row bg-light">
           <div class="col-sm-12 col-md-4 col-lg-4 m-0 p-0">
-            <img class="w-100 h-auto" src="./assets/personal_pic.jpg" />
+            <img class="w-100 h-auto" src="./assets/personal_pic.jpg" alt="Ameer Taweel's personal photo" />
           </div>
           <div class="col-sm-12 col-md-8 col-lg-8 px-5 py-3 text-left">
             <h2 class="my-3 animate-h2">I'm Ameer Taweel</h2>
-            <h3 class="text-muted animate-p">I am an Android &amp; Full-Stack Developer based in Jerusalem,
+            <h3 class="muted-text animate-p">I am an Android &amp; Full-Stack Developer based in Jerusalem,
               Palestine. I love <span class="text-main">coding</span>, <span class="text-main">
               gaming</span>, <span class="text-main">music</span>, <span class="text-main">
               reading</span>, and playing <span class="text-main">Football</span> with friends.</h3>
           </div>
         </div>
       </div>
-      <div class="container-fluid p-5 bg-dark text-left">
+      <div id="footer" class="container-fluid p-4 bg-dark">
         <div class="row">
           <div class="col-sm-12 col-md-6 my-3">
             <h1 class="animate-h2 text-white">Get in touch</h1>
-            <h3 class="text-secondary my-3">Got a project you would like me to work on? Or how about just a friendly chat?
+            <h3 class="text-light my-3">Got a project you would like me to work on? Or how about just a friendly chat?
             Send me an email on the adress below.</h3>
             <h3 class="font-weight-bold text-white">Email</h3>
             <a class="link" href="mailto:ameeertaweel2002@gmail.com" target="_blank"><h3 class="text-main"><small>ameeertaweel2002@gmail.com</small></h3></a>
           </div>
           <div class="col-sm-12 col-md-6 my-3">
             <h1 class="animate-h2 text-white">Networks</h1>
-            <h3 class="text-secondary my-3">Give me a follow on these sites</h3>
-            <a class="link" href="https://www.linkedin.com/in/ameer-taweel" target="_blank"><h3 class="text-main">LinkedIn</h3></a>
-            <a class="link" href="https://github.com/AmeerTaweel" target="_blank"><h3 class="text-main">Github</h3></a>
+            <h3 class="text-light my-3">Give me a follow on these sites</h3>
+            <a class="link" href="https://www.linkedin.com/in/ameer-taweel" rel="noopener noreferrer" target="_blank"><h3 class="text-main">LinkedIn</h3></a>
+            <a class="link" href="https://github.com/AmeerTaweel" rel="noopener noreferrer" target="_blank"><h3 class="text-main">Github</h3></a>
           </div>
         </div>
         <div class="row">
@@ -127,8 +127,16 @@ export default {
   transition: all 0.3s 0.3s;
 }
 
+#footer{
+  text-align: left;
+}
+
 /*  Small Screens */
 @media only screen and (max-width: 767px) {
+  #footer{
+    text-align: center;
+  }
+
   .animate-h1{
     font-size: 2.5em;
   }
@@ -211,6 +219,10 @@ export default {
 
 .text-main {
   color: rgb(75, 184, 210);
+}
+
+.muted-text {
+  color: #51565C;
 }
 
 .link:hover {

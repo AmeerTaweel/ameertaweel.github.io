@@ -1,0 +1,16 @@
+{
+    "short_name": "Ameer Taweel",
+    "name": "Ameer Taweel - Android and Full-Stack Developer",
+    "icons": [
+      {
+        "src": "./src/assets/logo.png",
+        "type": "image/png",
+        "sizes": "1000x1000"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#4bb8d2"
+}
