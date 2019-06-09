@@ -2,8 +2,9 @@
 <html lang="en" class="h-100">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- ViewPort -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- Website Metadata -->
     <meta name="description" content="Ameer Taweel is a professional Android and Full-Stack
     Developer, specialist in Firebase, Android technologies like Java and XML, Front-End technologies
@@ -46,10 +47,13 @@
     <!-- Courgette Font -->
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./src/assets/logo.png" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   </head>
-  <body class="h-100">
-    <div id="app" class="h-100"></div>
-    <script src="./dist/build.js"></script>
+  <body>
+    <noscript>
+      <strong>We're sorry but personal-website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
   </body>
 </html>
