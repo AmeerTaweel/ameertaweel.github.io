@@ -1,18 +1,38 @@
-# personal-website
+# Ameer Taweel's Personal Website
 
-> Ameer Taweel's personal website.
+This is where I put information about me, my skills and projects, and more...
+Visit [my personal website](https://ameer-taweel.firebaseapp.com/).
 
-## Build Setup
+## Project Setup
 
-``` bash
-# install dependencies
+```bash
 npm install
+```
 
-# serve with hot reload at localhost:8080
-npm run dev
+### Compiles & Hot-Reloads For Development
 
-# build for production with minification
+```bash
+npm run serve
+```
+
+### Compiles & Minifies For Production
+
+```bash
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Run Your Tests
+
+```bash
+npm run test
+```
+
+### Lints & Fixes Files
+
+```bash
+npm run lint
+```
+
+### Customize Configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
