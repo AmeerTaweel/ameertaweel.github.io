@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="h-100">
-    <div class="parallax parallax-image-theme">
+    <div class="parallax-image-theme parallax">
       <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="position-fixed">
           <h1 class="text-white animate-h1 p-3">Ameer Mohannad Taweel</h1>
@@ -194,6 +194,9 @@ export default {
 .link:hover
   text-decoration-color: rgb(75, 184, 210)
 
+.parallax-image-theme
+  background: linear-gradient(rgba(75, 184, 210, 0.7), rgba(75, 184, 210, 0.7)), url('../public/background.png')
+
 .parallax
   /* Full Height */
   height: 100%
@@ -203,7 +206,4 @@ export default {
   background-repeat: no-repeat
   background-size: cover
   position: relative
-
-.parallax-image-theme
-  background: linear-gradient(rgba(75, 184, 210, 0.7), rgba(75, 184, 210, 0.7)), url('../public/background.png')
 </style>
