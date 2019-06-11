@@ -1,11 +1,10 @@
 <template>
   <div id="app" class="h-100">
-    <div class="parallax">
-      <h1 class="hand-text position-absolute text-white bold-text p-4 w-100"><span class="text-dark">A</span>meer<span class="text-dark">T</span>aweel</h1>
+    <div class="parallax parallax-image-theme">
       <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="position-fixed">
-          <h1 class="text-white animate-h1 p-3">Android &amp; Full-Stack Developer</h1>
-          <h4 class="text-dark animate-h4 text-uppercase">Passionate About Coding &amp; Making World Better</h4>
+          <h1 class="text-white animate-h1 p-3">Ameer Mohannad Taweel</h1>
+          <h4 class="text-dark animate-h4 text-uppercase">Passionate About Coding &amp; Making The World Better</h4>
         </div>
       </div>
     </div>
@@ -21,7 +20,7 @@
       <div class="container-fluid mt-5">
         <div class="row bg-light">
           <div class="col-sm-12 col-md-4 col-lg-4 m-0 p-0">
-            <img class="w-100 h-auto" src="./assets/personal_pic.jpg" alt="Ameer Taweel's personal photo" />
+            <img class="w-100 h-auto" src="../public/personal_pic.jpg" alt="Ameer Taweel's personal photo" />
           </div>
           <div class="col-sm-12 col-md-8 col-lg-8 px-5 py-3 text-left">
             <h2 class="my-3 animate-h2">I'm Ameer Taweel</h2>
@@ -70,7 +69,7 @@ export default {
     }
   },
   methods: {
-    loadProjects(){
+    loadProjects () {
       firebaseApp.firestore().collection(`projects`).get().then((projectSnapshot) => {
         projectSnapshot.forEach((project) => {
           this.projects.push(project.data())
@@ -78,7 +77,7 @@ export default {
       })
     }
   },
-  created(){
+  created () {
     this.loadProjects()
   },
   components: {
@@ -87,164 +86,124 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-}
+<style lang="sass">
+#app
+  font-family: 'Raleway', sans-serif
+  text-align: center
 
-.animate-h1{
-  font-size: 2.5em;
-  font-weight: bold;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
+.animate-h1
+  font-size: 2.5em
+  font-weight: bold
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
 
-.animate-h2{
-  font-size: 2.5em;
-  font-weight: bold;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
+.animate-h2
+  font-size: 2.5em
+  font-weight: bold
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
 
-.animate-h4{
-  font-size: 1em;
-  font-weight: bold;
-  -webkit-transition: all 0.3s 0.3s;
-  -moz-transition: all 0.3s 0.3s;
-  -o-transition: all 0.3s 0.3s;
-  transition: all 0.3s 0.3s;
-}
+.animate-h4
+  font-size: 1em
+  font-weight: bold
+  -webkit-transition: all 0.3s 0.3s
+  -moz-transition: all 0.3s 0.3s
+  -o-transition: all 0.3s 0.3s
+  transition: all 0.3s 0.3s
 
-.animate-p{
-  -webkit-transition: all 0.3s 0.3s;
-  -moz-transition: all 0.3s 0.3s;
-  -o-transition: all 0.3s 0.3s;
-  transition: all 0.3s 0.3s;
-}
+.animate-p
+  -webkit-transition: all 0.3s 0.3s
+  -moz-transition: all 0.3s 0.3s
+  -o-transition: all 0.3s 0.3s
+  transition: all 0.3s 0.3s
 
-#footer{
-  text-align: left;
-}
+#footer
+  text-align: left
 
 /*  Small Screens */
-@media only screen and (max-width: 767px) {
-  #footer{
-    text-align: center;
-  }
+@media only screen and (max-width: 767px)
+  #footer
+    text-align: center
 
-  .animate-h1{
-    font-size: 2.5em;
-  }
+  .animate-h1
+    font-size: 2.5em
 
-  .animate-h2{
-    font-size: 2em;
-    text-align: center;
-  }
+  .animate-h2
+    font-size: 2em
+    text-align: center
 
-  .animate-h4{
-    font-size: 1em;
-  }
+  .animate-h4
+    font-size: 1em
 
-  .animate-p{
-    font-size: 1em;
-    text-align: center;
-  }
-}
+  .animate-p
+    font-size: 1em
+    text-align: center
 
 /*  Medium Screens */
-@media only screen and (min-width:768px) and (max-width: 991px) {
-  .animate-h1{
-    font-size: 3em;
-  }
+@media only screen and (min-width:768px) and (max-width: 991px)
+  .animate-h1
+    font-size: 3em
 
-  .animate-h2{
-    font-size: 2.5em;
-  }
+  .animate-h2
+    font-size: 2.5em
 
-  .animate-h4{
-    font-size: 1.2em;
-  }
+  .animate-h4
+    font-size: 1.2em
 
-  .animate-p{
-    font-size: 1.4em;
-  }
-}
+  .animate-p
+    font-size: 1.4em
 
 /*  Large Screens */
-@media only screen and (min-width:992px) and (max-width: 1199px) {
-  .animate-h1{
-    font-size: 4em;
-  }
+@media only screen and (min-width:992px) and (max-width: 1199px)
+  .animate-h1
+    font-size: 4em
 
-  .animate-h2{
-    font-size: 3em;
-  }
+  .animate-h2
+    font-size: 3em
 
-  .animate-h4{
-    font-size: 1.6em;
-  }
+  .animate-h4
+    font-size: 1.6em
 
-  .animate-p{
-    font-size: 2em;
-  }
-}
+  .animate-p
+    font-size: 2em
 
 /*  Extra Large Screens */
-@media only screen and (min-width:1200px) {
-  .animate-h1{
-    font-size: 4.5em;
-  }
+@media only screen and (min-width:1200px)
+  .animate-h1
+    font-size: 4.5em
 
-  .animate-h2{
-    font-size: 3.5em;
-  }
+  .animate-h2
+    font-size: 3.5em
 
-  .animate-h4{
-    font-size: 1.8em;
-  }
+  .animate-h4
+    font-size: 1.8em
 
-  .animate-p{
-    font-size: 2.5em;
-  }
-}
+  .animate-p
+    font-size: 2.5em
 
-.hand-text {
-  font-family: 'Courgette', cursive;
-}
+.text-main
+  color: rgb(75, 184, 210)
 
-.text-main {
-  color: rgb(75, 184, 210);
-}
+.muted-text
+  color: #51565C
 
-.muted-text {
-  color: #51565C;
-}
+.link:hover
+  text-decoration-color: rgb(75, 184, 210)
 
-.link:hover {
-  text-decoration-color: rgb(75, 184, 210);
-}
+.parallax
+  /* Full Height */
+  height: 100%
+  /* Create the Parallax Scrolling Effect */
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  position: relative
 
-.parallax {
-  /* The image used */
-  background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(75, 184, 210, 0.7), 
-      rgba(75, 184, 210, 0.7)
-    ),
-    /* bottom, image */
-    url('./assets/background.png');
-  /* Full height */
-  height: 100%; 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+.parallax-image-theme
+  background: linear-gradient(rgba(75, 184, 210, 0.7), rgba(75, 184, 210, 0.7)), url('../public/background.png')
 </style>
