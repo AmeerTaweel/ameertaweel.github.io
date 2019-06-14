@@ -29,7 +29,7 @@
       </div>
     </div>
     <!-- Skills Intro -->
-    <div class="parallax-image-skills parallax">
+    <div class="parallax-image-skills parallax mt-5">
       <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="text-white w-100 px-4">
           <h1 class="c-h1 animate-text py-4">Skills and Abilities</h1>
@@ -37,8 +37,23 @@
         </div>
       </div>
     </div>
+    <!-- Skills Section -->
+    <div class="position-relative bg-white">
+      <div v-for="(section, i) in skills" :key="i">
+        <h2 class="text-secondary c-h2 m-5 animate-text">{{section.title}}</h2>
+        <div class="container text-left">
+          <div class="row">
+            <div class="col-12 col-lg-6" v-for="(column, j) in section.skills" :key="j">
+              <div class="d-flex justify-content-between align-items-center" v-for="(skill, o) in column" :key="o">
+                <p class="lead">{{skill.name}}</p><Rate allow-half disabled v-model="skill.rate"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Projects Intro -->
-    <div class="parallax-image-projects parallax">
+    <div class="parallax-image-projects parallax mt-5">
       <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="text-white w-100 px-4">
           <h1 class="c-h1 animate-text py-4">Projects</h1>
@@ -47,7 +62,7 @@
       </div>
     </div>
     <!-- Experience Intro -->
-    <div class="parallax-image-experiences parallax">
+    <div class="parallax-image-experiences parallax mt-5">
       <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="text-white w-100 px-4">
           <h1 class="c-h1 animate-text py-4">Experiences</h1>
@@ -112,6 +127,121 @@ export default {
   name: 'app',
   data () {
     return {
+      skills: [{
+        title: `Tools & Technologies`,
+        skills: [[{
+          name: `Software Development`,
+          rate: 5
+        }, {
+          name: `Object Oriented Programming (OOP)`,
+          rate: 5
+        }, {
+          name: `Git & Github`,
+          rate: 5
+        }, {
+          name: `Firebase`,
+          rate: 4.5
+        }, {
+          name: `Android Development`,
+          rate: 5
+        }, {
+          name: `Android Studio`,
+          rate: 5
+        }, {
+          name: `Java`,
+          rate: 5
+        }, {
+          name: `XML`,
+          rate: 5
+        }, {
+          name: `Web Development`,
+          rate: 5
+        }, {
+          name: `Full-Stack Development`,
+          rate: 5
+        }, {
+          name: `Front-End Development`,
+          rate: 5
+        }, {
+          name: `HTML5`,
+          rate: 5
+        }, {
+          name: `CSS3`,
+          rate: 5
+        }, {
+          name: `JavaScript`,
+          rate: 5
+        }], [{
+          name: `Vue.js`,
+          rate: 5
+        }, {
+          name: `SASS`,
+          rate: 3
+        }, {
+          name: `Back-End Development`,
+          rate: 4
+        }, {
+          name: `Node.js & NPM`,
+          rate: 4
+        }, {
+          name: `Databases`,
+          rate: 4
+        }, {
+          name: `RESTful APIs`,
+          rate: 4
+        }, {
+          name: `Machine Learning`,
+          rate: 3
+        }, {
+          name: `Octave`,
+          rate: 4
+        }, {
+          name: `Python`,
+          rate: 4
+        }, {
+          name: `Internet of Things (IoT)`,
+          rate: 4
+        }, {
+          name: `C++`,
+          rate: 3
+        }, {
+          name: `Kotlin`,
+          rate: 3
+        }, {
+          name: `Photoshop`,
+          rate: 4
+        }, {
+          name: `Linux`,
+          rate: 4
+        }]]
+      }, {
+        title: `Languages`,
+        skills: [[{
+          name: `Arabic`,
+          rate: 5
+        }, {
+          name: `English`,
+          rate: 4.5
+        }], [{
+          name: `Hebrew`,
+          rate: 3
+        }]]
+      }, {
+        title: `Interpersonal Skills`,
+        skills: [[{
+          name: `Leadership`,
+          rate: 5
+        }, {
+          name: `Time Management`,
+          rate: 5
+        }], [{
+          name: `Self Learning`,
+          rate: 5
+        }, {
+          name: `Personal Development`,
+          rate: 5
+        }]]
+      }],
       projects: []
     }
   },
