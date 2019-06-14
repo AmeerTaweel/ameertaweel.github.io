@@ -23,7 +23,7 @@
           I'm passionate <span class="text-main">coding</span> and computer stuff&#128187;&#128293;.
           I like <span class="text-main">learning</span> and <span class="text-main">challenging</span> myself&#128216;.
           For entertainment I do <span class="text-main">gaming</span>&#127918;, listen to <span class="text-main">music</span>&#127911;,
-          play <span class="text-main">Chess</span>&#9823;, watch <span class="text-main">Anime</span>&#128122;, and play
+          play <span class="text-main">Chess</span>&#9823;, watch <span class="text-main">Anime</span>&#128250;&#128122;, and play
           <span class="text-main">Soccer</span> with friends&#9917;.
         </h3>
       </div>
