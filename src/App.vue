@@ -98,22 +98,21 @@
     </div>
     <!-- Contact Section -->
     <div id="footer" class="position-relative mt-5 p-4 container-fluid bg-dark">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 my-3">
+      <div class="row my-3">
+        <div class="col-sm-12 col-md-6">
           <h1 class="c-h2 animate-text text-white">Get in touch</h1>
           <h3 class="text-light my-3">Got a project you would like me to work on? Or how about just a friendly chat?
-          Send me an email on the adress below.</h3>
-          <h3 class="font-weight-bold text-white">Email</h3>
-          <a class="link" href="mailto:ameeertaweel2002@gmail.com" target="_blank"><h3 class="link"><small>ameeertaweel2002@gmail.com</small></h3></a>
+          Send me an email on the address below:</h3>
+          <a class="link" href="mailto:ameeertaweel2002@gmail.com" target="_blank"><h4>ameeertaweel2002@gmail.com</h4></a>
         </div>
-        <div class="col-sm-12 col-md-6 my-3">
+        <div class="col-sm-12 col-md-6">
           <h1 class="c-h2 animate-text text-white">Networks</h1>
-          <h3 class="text-light my-3">Give me a follow on these sites</h3>
-          <a class="link" href="https://www.linkedin.com/in/ameer-taweel" rel="noopener noreferrer" target="_blank"><h3 class="link">LinkedIn</h3></a>
-          <a class="link" href="https://github.com/AmeerTaweel" rel="noopener noreferrer" target="_blank"><h3 class="link">Github</h3></a>
+          <h3 class="text-light my-3">Give me a follow on these sites:</h3>
+          <a class="link" href="https://www.linkedin.com/in/ameer-taweel" rel="noopener noreferrer" target="_blank"><h3>LinkedIn</h3></a><br/>
+          <a class="link" href="https://github.com/AmeerTaweel" rel="noopener noreferrer" target="_blank"><h3>Github</h3></a>
         </div>
         <div class="col-12 text-center mt-4 text-white">
-          <h5>Copyright © 2018 Ameer Taweel</h5>
+          <h5>Copyright © 2019 Ameer Taweel</h5>
         </div>
       </div>
     </div>
@@ -122,7 +121,6 @@
 
 <script>
 import Project from './components/Project.vue'
-import { firebaseApp } from './firebase.js'
 export default {
   name: 'app',
   data () {
@@ -242,7 +240,27 @@ export default {
           rate: 5
         }]]
       }],
-      projects: [],
+      projects: [{
+        description: `Android causal game written in Java and developed using Android Studio. Got great reviews (+4.8).`,
+        name: `Bounce Hero`,
+        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/bounce_hero_logo.png?alt=media&token=a4f5eeda-4d79-45b6-8f01-6455f8f47d95`,
+        url: `https://play.google.com/store/apps/details?id=com.ameer.android.bouncehero`
+      }, {
+        description: `NoteXPro is a simple, responsive notepad made with Vue.js and Bootstrap.`,
+        name: `NoteXPro`,
+        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/note-x-pro-logo.png?alt=media&token=a60355a4-260f-4b07-9c10-1dec445af546`,
+        url: `https://notexpro-ameer-taweel.firebaseapp.com`
+      }, {
+        description: `Android trivia game written in Java and developed using Android Studio. Uses an advanced RESTful API.`,
+        name: `Tahadi Almarifa`,
+        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/tahadi_almarifa_logo.png?alt=media&token=0939df03-6c2e-48fe-abf3-589d172b0a06`,
+        url: `https://play.google.com/store/apps/details?id=com.game.ameer.ta7adialma3rifa`
+      }, {
+        description: `Online database of information about Japanese Anime, made with Vue.js and Bootstrap.`,
+        name: `The Anime Database`,
+        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/tadb_logo.png?alt=media&token=7a55fb93-3a82-4496-b4dd-1e9426eae507`,
+        url: `https://the-anime-database-ameertaweel.firebaseapp.com`
+      }],
       experiences: [{
         title: `Education`,
         exps: [{
@@ -311,18 +329,6 @@ export default {
       }]
     }
   },
-  methods: {
-    loadProjects () {
-      firebaseApp.firestore().collection(`projects`).get().then((projectSnapshot) => {
-        projectSnapshot.forEach((project) => {
-          this.projects.push(project.data())
-        })
-      })
-    }
-  },
-  created () {
-    this.loadProjects()
-  },
   components: {
     Project
   }
@@ -347,7 +353,7 @@ $secondary-color: #333
   font-weight: bold
 
 #footer
-  text-align: left
+  text-align: justify
 
 /*  Small Screens */
 @media only screen and (max-width: 767px)
@@ -402,9 +408,13 @@ $secondary-color: #333
 .text-main
   color: #1565C0
 
-.link, .link:hover
+.link
   color: #4BB8D2
-  text-decoration-color: #4BB8D2
+  display: inline-block
+
+.link:hover
+  color: #FFFFFF
+  text-decoration: underline
 
 .parallax-image-intro
   background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../public/bg-intro.jpg')
