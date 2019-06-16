@@ -15,7 +15,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-6 col-sm-5 col-md-4 col-lg-3">
-            <img class="w-100 h-auto rounded-circle" src="../public/ameer-taweel.jpg" alt="Ameer Taweel's personal photo" />
+            <img class="w-100 h-auto rounded-circle" src="../assets/images/ameer-taweel.jpg" alt="Ameer Taweel's personal photo" />
           </div>
         </div>
         <h3 class="text-muted c-p animate-text m-4 text-justify">
@@ -417,16 +417,16 @@ $secondary-color: #333
   text-decoration: underline
 
 .parallax-image-intro
-  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../public/bg-intro.jpg')
+  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../assets/images/bg-intro.jpg')
 
 .parallax-image-projects
-  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../public/bg-projects.jpg')
+  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../assets/images/bg-projects.jpg')
 
 .parallax-image-skills
-  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../public/bg-skills.jpg')
+  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../assets/images/bg-skills.jpg')
 
 .parallax-image-experiences
-  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.5), rgba(0, 31, 62, 0.7)), url('../public/bg-experiences.jpg')
+  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.5), rgba(0, 31, 62, 0.7)), url('../assets/images/bg-experiences.jpg')
 
 .parallax
   /* Full Height */

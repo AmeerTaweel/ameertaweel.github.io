@@ -6,7 +6,6 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new CopyWebpackPlugin([
-        { from: `./public/404.html` },
         { from: `./robots.txt` },
         { from: `./google8e36e7ad0bba5cc1.html` }
       ])
