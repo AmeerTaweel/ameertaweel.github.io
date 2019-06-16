@@ -18,7 +18,7 @@
             <img class="w-100 h-auto rounded-circle" src="../public/ameer-taweel.jpg" alt="Ameer Taweel's personal photo" />
           </div>
         </div>
-        <h3 class="muted-text c-p animate-text m-4 text-justify">
+        <h3 class="text-muted c-p animate-text m-4 text-justify">
           I am an Android and Full-Stack Developer based in Jerusalem, Palestine.
           I'm passionate <span class="text-main">coding</span> and computer stuff&#128187;&#128293;.
           I like <span class="text-main">learning</span> and <span class="text-main">challenging</span> myself&#128216;.
@@ -71,7 +71,7 @@
         </div>
       </div>
     </div>
-    <!-- Experience Intro -->
+    <!-- Experiences Intro -->
     <div class="parallax-image-experiences parallax mt-5">
       <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="text-white w-100 px-4">
@@ -80,27 +80,40 @@
         </div>
       </div>
     </div>
+    <!-- Experiences Section -->
     <div class="position-relative bg-white">
-      <div id="footer" class="container-fluid p-4 bg-dark">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 my-3">
-            <h1 class="c-h2 animate-text text-white">Get in touch</h1>
-            <h3 class="text-light my-3">Got a project you would like me to work on? Or how about just a friendly chat?
-            Send me an email on the adress below.</h3>
-            <h3 class="font-weight-bold text-white">Email</h3>
-            <a class="link" href="mailto:ameeertaweel2002@gmail.com" target="_blank"><h3 class="link"><small>ameeertaweel2002@gmail.com</small></h3></a>
-          </div>
-          <div class="col-sm-12 col-md-6 my-3">
-            <h1 class="c-h2 animate-text text-white">Networks</h1>
-            <h3 class="text-light my-3">Give me a follow on these sites</h3>
-            <a class="link" href="https://www.linkedin.com/in/ameer-taweel" rel="noopener noreferrer" target="_blank"><h3 class="link">LinkedIn</h3></a>
-            <a class="link" href="https://github.com/AmeerTaweel" rel="noopener noreferrer" target="_blank"><h3 class="link">Github</h3></a>
+      <div v-for="(section, i) in experiences" :key="i">
+        <h2 class="text-secondary c-h2 m-5 animate-text">{{section.title}}</h2>
+        <div class="container text-left">
+          <div class="row text-justify">
+            <div class="col-12 my-3" v-for="(exp, j) in section.exps" :key="j">
+              <p class="lead">{{exp.place}}</p>
+              <p class="lead font-weight-bold">{{exp.name}}</p>
+              <p class="lead text-muted">{{exp.time}}</p>
+              <p class="lead">{{exp.description}}</p>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 text-center pt-5 text-white">
-            <h5>Copyright © 2018 Ameer Taweel.</h5>
-          </div>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="footer" class="position-relative mt-5 p-4 container-fluid bg-dark">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 my-3">
+          <h1 class="c-h2 animate-text text-white">Get in touch</h1>
+          <h3 class="text-light my-3">Got a project you would like me to work on? Or how about just a friendly chat?
+          Send me an email on the adress below.</h3>
+          <h3 class="font-weight-bold text-white">Email</h3>
+          <a class="link" href="mailto:ameeertaweel2002@gmail.com" target="_blank"><h3 class="link"><small>ameeertaweel2002@gmail.com</small></h3></a>
+        </div>
+        <div class="col-sm-12 col-md-6 my-3">
+          <h1 class="c-h2 animate-text text-white">Networks</h1>
+          <h3 class="text-light my-3">Give me a follow on these sites</h3>
+          <a class="link" href="https://www.linkedin.com/in/ameer-taweel" rel="noopener noreferrer" target="_blank"><h3 class="link">LinkedIn</h3></a>
+          <a class="link" href="https://github.com/AmeerTaweel" rel="noopener noreferrer" target="_blank"><h3 class="link">Github</h3></a>
+        </div>
+        <div class="col-12 text-center mt-4 text-white">
+          <h5>Copyright © 2018 Ameer Taweel</h5>
         </div>
       </div>
     </div>
@@ -229,7 +242,73 @@ export default {
           rate: 5
         }]]
       }],
-      projects: []
+      projects: [],
+      experiences: [{
+        title: `Education`,
+        exps: [{
+          name: `Young Sustainable Impact (YSI)`,
+          description: `YSI is a program where the smartest minds below 28 years are chosen to create an impact startup. Focusing on the 17 SDGs - it aims to help 8 teams create new startups from scratch. They provide them with a world-class team, educational resources, mentors and network, money and access for testing, as well as a vibrant community. I'm a member at team 5. We focus on building a sustainable start up focused on the third SDG, Health and Well-Being.`,
+          time: `Mar 2019 - Aug 2019`,
+          place: `Online Program - Last 15 Days in Oslo, Norway`
+        }, {
+          name: `Concepts in Games Development`,
+          description: `Essential game design elements and the role of a game designer. Key game development stages and principles of agile game development.`,
+          time: `Dec 2018`,
+          place: `Open2Study.com - Online`
+        }, {
+          name: `Graphic Design Using Photoshop`,
+          description: `Learn the essential tools for editing and manipulating images, how to use the layers panel including creating and editing layer masks, edit photos (both RAW and compressed images) with a variety of tools and non-destructive methods.`,
+          time: `Oct 2018`,
+          place: `Udemy.com - Online`,
+          links: [{
+            name: `Certificate URL`,
+            link: `http://ude.my/UC-ECYTLZSQ`
+          }]
+        }, {
+          name: `Full Stack Developer`,
+          description: `Build back-ends and create RESTful APIs, and use them in web apps.`,
+          time: `Aug 2018`,
+          place: `One Million Arab Coders - Udacity.com - Online`
+        }, {
+          name: `Vue.js Developer`,
+          description: `Build entire Vue JS, VueRouter, and Vuex applications from scratch. Develop apps that deal with APIs and web requests. Create web apps with a full authentication service, and real-time database.`,
+          time: `Aug 2018`,
+          place: `Udemy.com - Online`,
+          links: [{
+            name: `Certificate URL`,
+            link: `http://ude.my/UC-8EKFDQLM`
+          }]
+        }, {
+          name: `Certified Web Developer`,
+          description: `Learned to create a web site using current standards HTML5 Javascript and CSS, maintain websites content and make edits and additions, build web sites that interact with databases and web services.`,
+          time: `Jun 2018`,
+          place: `Udemy.com - Online`,
+          links: [{
+            name: `Certificate URL`,
+            link: `http://ude.my/UC-DEVZ1B1C`
+          }]
+        }, {
+          name: `Internet of Things (IoT): Roadmap to a Connected World`,
+          description: `Discover key IoT concepts including identification, sensors, localization, wireless protocols, data storage and security. Explore IoT technologies, architectures, standards, and regulation. Understand how to develop and implement your own IoT technologies, solutions, and applications.`,
+          time: `May 2018`,
+          place: `MIT xPro - Online`
+        }, {
+          name: `Android Developer Nanodegree`,
+          description: `The Udacity Android Developer Nanodegree program is an online course to learn advanced Android techniques and concepts to help students build fast, clean, stable Android applications, that satisfies the users.`,
+          time: `2017`,
+          place: `Udacity.com - Online`
+        }, {
+          name: `English Access Micro - Scholarship Program`,
+          description: `Access is a two-year program to improve English.`,
+          time: `Sep 2015 - May 2017`,
+          place: `Amideast, Ramallah`
+        }, {
+          name: `High School - Scientific Stream`,
+          description: `I learned high level math like Calculus, Linear Algebra, and Complex Numbers. I learned a lot about Biology, Physics, and Technology as well.`,
+          time: `Aug 2017 - Aug 2020`,
+          place: `Al-Ummah High School`
+        }]
+      }]
     }
   },
   methods: {
@@ -322,9 +401,6 @@ $secondary-color: #333
 
 .text-main
   color: #1565C0
-
-.muted-text
-  color: #51565C
 
 .link, .link:hover
   color: #4BB8D2
