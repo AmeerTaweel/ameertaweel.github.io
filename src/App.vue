@@ -15,7 +15,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-6 col-sm-5 col-md-4 col-lg-3">
-            <img class="w-100 h-auto rounded-circle" src="../assets/images/ameer-taweel.jpg" alt="Ameer Taweel's personal photo" />
+            <picture>
+              <source srcset="../assets/images/ameer-taweel.webp" type="image/webp">
+              <source srcset="../assets/images/ameer-taweel.jpg" type="image/jpeg"> 
+              <img class="w-100 h-auto rounded-circle" src="../assets/images/ameer-taweel.jpg" alt="Ameer Taweel's personal photo" />
+            </picture>
           </div>
         </div>
         <h3 class="text-muted c-p animate-text m-4 text-justify">
