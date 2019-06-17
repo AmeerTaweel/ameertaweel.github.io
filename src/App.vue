@@ -24,7 +24,7 @@
         </div>
         <h3 class="text-muted c-p animate-text m-4 text-justify">
           I am an Android and Full-Stack Developer based in Jerusalem, Palestine.
-          I'm passionate <span class="text-main">coding</span> and computer stuff&#128187;&#128293;.
+          I'm passionate about <span class="text-main">coding</span> and computer stuff&#128187;&#128293;.
           I like <span class="text-main">learning</span> and <span class="text-main">challenging</span> myself&#128216;.
           For entertainment I do <span class="text-main">gaming</span>&#127918;, listen to <span class="text-main">music</span>&#127911;,
           play <span class="text-main">Chess</span>&#9823;, watch <span class="text-main">Anime</span>&#128250;&#128122;, and play
@@ -49,7 +49,7 @@
           <div class="row">
             <div class="col-12 col-lg-6" v-for="(column, j) in section.skills" :key="j">
               <div class="d-flex justify-content-between align-items-center" v-for="(skill, o) in column" :key="o">
-                <p class="lead">{{skill.name}}</p><Rate allow-half disabled v-model="skill.rate"/>
+                <p class="lead">{{skill.name}}</p><Rate allow-half disabled v-model="skill.rate" class="text-nowrap"/>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@
           <h1 class="c-h2 animate-text text-white">Get in touch</h1>
           <h3 class="text-light my-3">Got a project you would like me to work on? Or how about just a friendly chat?
           Send me an email on the address below:</h3>
-          <a class="link" href="mailto:ameeertaweel2002@gmail.com" target="_blank"><h4>ameeertaweel2002@gmail.com</h4></a>
+          <a class="link w-100 force-break-text" href="mailto:ameeertaweel2002@gmail.com" target="_blank"><h4>ameeertaweel2002@gmail.com</h4></a>
         </div>
         <div class="col-sm-12 col-md-6">
           <h1 class="c-h2 animate-text text-white">Networks</h1>
@@ -226,7 +226,7 @@ export default {
           rate: 4.5
         }], [{
           name: `Hebrew`,
-          rate: 3
+          rate: 2
         }]]
       }, {
         title: `Interpersonal Skills`,
@@ -419,6 +419,13 @@ $secondary-color: #333
 .link:hover
   color: #FFFFFF
   text-decoration: underline
+
+.force-break-text
+  white-space: pre-wrap
+  white-space: -moz-pre-wrap
+  white-space: -pre-wrap
+  white-space: -o-pre-wrap
+  word-wrap: break-word
 
 .parallax-image-intro
   background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../assets/images/bg-intro.jpg')
