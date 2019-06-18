@@ -17,7 +17,7 @@
           <div class="col-6 col-sm-5 col-md-4 col-lg-3">
             <picture>
               <source srcset="../assets/images/ameer-taweel.webp" type="image/webp">
-              <source srcset="../assets/images/ameer-taweel.jpg" type="image/jpeg"> 
+              <source srcset="../assets/images/ameer-taweel.jpg" type="image/jpeg">
               <img class="w-100 h-auto rounded-circle" src="../assets/images/ameer-taweel.jpg" alt="Ameer Taweel's personal photo" />
             </picture>
           </div>
@@ -342,6 +342,11 @@ export default {
 <style lang="sass">
 $primary-color: #FFEB3B
 $secondary-color: #333
+
+@font-face
+  font-family: Raleway
+  font-display: swap
+  src: url(https://fonts.googleapis.com/css?family=Raleway)
 
 #app
   font-family: 'Raleway', sans-serif
