@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="h-100">
     <!-- Name and Intro -->
-    <div class="parallax-image-intro parallax">
+    <div :class="{ 'parallax-image-intro': !webPSupported, 'parallax-image-intro-webp': webPSupported }" class="parallax">
       <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="text-white w-100 px-4">
           <h1 class="c-h1 animate-text py-4">Ameer Mohannad Taweel</h1>
@@ -33,7 +33,7 @@
       </div>
     </div>
     <!-- Skills Intro -->
-    <div class="parallax-image-skills parallax mt-5">
+    <div :class="{ 'parallax-image-skills': !webPSupported, 'parallax-image-skills-webp': webPSupported }" class="parallax mt-5">
       <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="text-white w-100 px-4">
           <h1 class="c-h1 animate-text py-4">Skills and Abilities</h1>
@@ -57,7 +57,7 @@
       </div>
     </div>
     <!-- Projects Intro -->
-    <div class="parallax-image-projects parallax mt-5">
+    <div :class="{ 'parallax-image-projects': !webPSupported, 'parallax-image-projects-webp': webPSupported }" class="parallax mt-5">
       <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="text-white w-100 px-4">
           <h1 class="c-h1 animate-text py-4">Projects</h1>
@@ -76,7 +76,7 @@
       </div>
     </div>
     <!-- Experiences Intro -->
-    <div class="parallax-image-experiences parallax mt-5">
+    <div :class="{ 'parallax-image-experiences': !webPSupported, 'parallax-image-experiences-webp': webPSupported }" class="parallax mt-5">
       <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="text-white w-100 px-4">
           <h1 class="c-h1 animate-text py-4">Experiences</h1>
@@ -126,9 +126,10 @@
 <script>
 import Project from './components/Project.vue'
 export default {
-  name: 'app',
+  name: `app`,
   data () {
     return {
+      webPSupported: false,
       skills: [{
         title: `Tools & Technologies`,
         skills: [[{
@@ -333,6 +334,22 @@ export default {
       }]
     }
   },
+  methods: {
+    supportsWebP () {
+      const elem = document.createElement(`canvas`)
+
+      if (elem.getContext && elem.getContext('2d')) {
+        // Was able or not to get WebP representation.
+        return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0
+      }
+
+      // Very old browser like IE 8, canvas not supported.
+      return false
+    }
+  },
+  created () {
+    this.webPSupported = this.supportsWebP()
+  },
   components: {
     Project
   }
@@ -435,14 +452,26 @@ $secondary-color: #333
   white-space: -o-pre-wrap
   word-wrap: break-word
 
+.parallax-image-intro-webp
+  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../assets/images/bg-intro.webp')
+
 .parallax-image-intro
   background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../assets/images/bg-intro.jpg')
+
+.parallax-image-projects-webp
+  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../assets/images/bg-projects.webp')
 
 .parallax-image-projects
   background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../assets/images/bg-projects.jpg')
 
+.parallax-image-skills-webp
+  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../assets/images/bg-skills.webp')
+
 .parallax-image-skills
   background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.7), rgb(0, 31, 62)), url('../assets/images/bg-skills.jpg')
+
+.parallax-image-experiences-webp
+  background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.5), rgba(0, 31, 62, 0.7)), url('../assets/images/bg-experiences.webp')
 
 .parallax-image-experiences
   background: linear-gradient(to right bottom, rgba(89, 167, 255, 0.5), rgba(0, 31, 62, 0.7)), url('../assets/images/bg-experiences.jpg')
