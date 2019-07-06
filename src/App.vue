@@ -23,11 +23,10 @@
           </div>
         </div>
         <h3 class="text-muted c-p animate-text m-4 text-justify">
-          I am an Android and Full-Stack Developer based in Jerusalem, Palestine.
+          I am an Android and Full-Stack Developer based in Jerusalem, Palestine&#127477;&#127480;.
           I'm passionate about <span class="text-main">coding</span> and computer stuff&#128187;&#128293;.
           I like <span class="text-main">learning</span> and <span class="text-main">challenging</span> myself&#128216;.
           For entertainment I do <span class="text-main">gaming</span>&#127918;, listen to <span class="text-main">music</span>&#127911;,
-          play <span class="text-main">Chess</span>&#9823;, watch <span class="text-main">Anime</span>&#128250;&#128122;, and play
           <span class="text-main">Soccer</span> with friends&#9917;.
         </h3>
       </div>
