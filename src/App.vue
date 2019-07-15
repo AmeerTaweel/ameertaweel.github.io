@@ -245,6 +245,11 @@ export default {
         }]]
       }],
       projects: [{
+        description: `3T Engine is a Tic Tac Toe engine. It uses Machine Learning (ML) to predict the best move in a given Tic Tac Toe position.`,
+        name: `3T Engine`,
+        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/3t-engine-logo.png?alt=media&token=0d241f7f-825e-4a10-99e2-74a06de9e89c`,
+        url: `https://ttt-engine.web.app/`
+      }, {
         description: `Android causal game written in Java and developed using Android Studio. Got great reviews (+4.8).`,
         name: `Bounce Hero`,
         thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/bounce_hero_logo.png?alt=media&token=a4f5eeda-4d79-45b6-8f01-6455f8f47d95`,
