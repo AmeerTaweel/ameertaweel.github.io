@@ -245,7 +245,7 @@ export default {
         }]]
       }],
       projects: [{
-        description: `3T Engine is a Tic Tac Toe engine. It uses Machine Learning (ML) to predict the best move in a given Tic Tac Toe position. The algorithm is trained using TensorFlow`,
+        description: `3T Engine is a Tic Tac Toe engine. It uses Machine Learning (ML) to predict the best move in a given Tic Tac Toe position. The algorithm is trained using TensorFlow.`,
         name: `3T Engine`,
         thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/3t-engine-logo.png?alt=media&token=0d241f7f-825e-4a10-99e2-74a06de9e89c`,
         url: `https://ttt-engine.web.app/`
