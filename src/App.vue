@@ -245,7 +245,7 @@ export default {
         }]]
       }],
       projects: [{
-        description: `3T Engine is a Tic Tac Toe engine. It uses Machine Learning (ML) to predict the best move in a given Tic Tac Toe position.`,
+        description: `3T Engine is a Tic Tac Toe engine. It uses Machine Learning (ML) to predict the best move in a given Tic Tac Toe position. The algorithm is trained using TensorFlow`,
         name: `3T Engine`,
         thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/3t-engine-logo.png?alt=media&token=0d241f7f-825e-4a10-99e2-74a06de9e89c`,
         url: `https://ttt-engine.web.app/`
@@ -260,7 +260,7 @@ export default {
         thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/note-x-pro-logo.png?alt=media&token=a60355a4-260f-4b07-9c10-1dec445af546`,
         url: `https://notexpro-ameer-taweel.firebaseapp.com`
       }, {
-        description: `Android trivia game written in Java and developed using Android Studio. Uses an advanced RESTful API.`,
+        description: `Android multiplayer trivia game written in Java and developed using Android Studio. Uses an advanced RESTful API.`,
         name: `Tahadi Almarifa`,
         thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/tahadi_almarifa_logo.png?alt=media&token=0939df03-6c2e-48fe-abf3-589d172b0a06`,
         url: `https://play.google.com/store/apps/details?id=com.game.ameer.ta7adialma3rifa`
