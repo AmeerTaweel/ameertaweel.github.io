@@ -257,7 +257,7 @@ export default {
       }, {
         description: `NoteXPro is a simple, responsive notepad made with Vue.js and Bootstrap.`,
         name: `NoteXPro`,
-        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/note-x-pro-logo.png?alt=media&token=a60355a4-260f-4b07-9c10-1dec445af546`,
+        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/note-x-pro-logo.png?alt=media&token=93f363d0-3417-44f4-8343-3e5aa0550acd`,
         url: `https://notexpro-ameer-taweel.firebaseapp.com`
       }, {
         description: `Android multiplayer trivia game written in Java and developed using Android Studio. Uses an advanced RESTful API.`,
