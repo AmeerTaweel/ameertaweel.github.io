@@ -255,20 +255,20 @@ export default {
         thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/bounce_hero_logo.png?alt=media&token=a4f5eeda-4d79-45b6-8f01-6455f8f47d95`,
         url: `https://play.google.com/store/apps/details?id=com.ameer.android.bouncehero`
       }, {
-        description: `NoteXPro is a simple, responsive notepad made with Vue.js and Bootstrap.`,
-        name: `NoteXPro`,
-        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/note-x-pro-logo.png?alt=media&token=93f363d0-3417-44f4-8343-3e5aa0550acd`,
-        url: `https://notexpro-ameer-taweel.firebaseapp.com`
+        description: `Online database of information about Japanese Anime, made with Vue.js and Bootstrap.`,
+        name: `The Anime Database`,
+        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/tadb-logo.png?alt=media&token=c9dc7407-8923-4053-be6d-e83dbde03554`,
+        url: `https://the-anime-database-ameertaweel.web.app`
       }, {
         description: `Android multiplayer trivia game written in Java and developed using Android Studio. Uses an advanced RESTful API.`,
         name: `Tahadi Almarifa`,
         thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/tahadi_almarifa_logo.png?alt=media&token=0939df03-6c2e-48fe-abf3-589d172b0a06`,
         url: `https://play.google.com/store/apps/details?id=com.game.ameer.ta7adialma3rifa`
       }, {
-        description: `Online database of information about Japanese Anime, made with Vue.js and Bootstrap.`,
-        name: `The Anime Database`,
-        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/tadb_logo.png?alt=media&token=7a55fb93-3a82-4496-b4dd-1e9426eae507`,
-        url: `https://the-anime-database-ameertaweel.firebaseapp.com`
+        description: `NoteXPro is a simple, responsive notepad made with Vue.js and Bootstrap.`,
+        name: `NoteXPro`,
+        thumb: `https://firebasestorage.googleapis.com/v0/b/ameer-taweel.appspot.com/o/note-x-pro-logo.png?alt=media&token=93f363d0-3417-44f4-8343-3e5aa0550acd`,
+        url: `https://notexpro-ameer-taweel.firebaseapp.com`
       }],
       experiences: [{
         title: `Education`,
