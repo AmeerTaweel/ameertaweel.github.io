@@ -1,3 +1,31 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Ameer Taweel"
+subtitle = "TODO"
+theme = "terminal"
+
+# Metadata
+owner = "Ameer Taweel"
+keywords = ""
+copyright = "Ameer Taweel"
+menuMore = "Show more"
+readMore = "Read more"
+readOtherPosts = "Read other posts"
+newerPosts = "Newer posts"
+olderPosts = "Older posts"
+missingContentMessage = "Page not found..."
+missingBackButtonLabel = "Back to home page"
+
+[params]
+
+centerTheme = true
+logo.logoText = "Ameer Taweel"
+logo.logoHomeLink = "/"
+
+[menu]
+
+[[menu.main]]
+
+identifier = "about"
+name = "About"
+url = "/about"
