@@ -7,7 +7,7 @@ theme = "hugo-coder"
 [params]
 
 author = "Ameer Taweel"
-info = "Computer Engineer That Writes Code For Fun"
+info = "IComputer Engineer That Writes Code For Fun"
 description = "John Doe's personal website"
 keywords = "blog,developer,personal"
 avatarurl = "images/avatar.jpg"
