@@ -1,0 +1,39 @@
+[debug] [2022-02-11T19:42:36.447Z] ----------------------------------------------------------------------
+[debug] [2022-02-11T19:42:36.449Z] Command:       /nix/store/6v68mxx2qfiy1is8d1fdn2k2bgv7fadl-nodejs-14.18.3/bin/node /nix/store/rnpic83wmv6dp9a9xp0qvmn4acaij2ik-firebase-tools-10.1.4/bin/firebase init hosting
+[debug] [2022-02-11T19:42:36.449Z] CLI Version:   10.1.4
+[debug] [2022-02-11T19:42:36.449Z] Platform:      linux
+[debug] [2022-02-11T19:42:36.450Z] Node Version:  v14.18.3
+[debug] [2022-02-11T19:42:36.450Z] Time:          Fri Feb 11 2022 22:42:36 GMT+0300 (GMT+03:00)
+[debug] [2022-02-11T19:42:36.450Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-11T19:42:36.455Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-11T19:42:36.455Z] > authorizing via signed-in user (ameertaweel2002@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/labmem001/personal-website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-02-11T19:42:44.237Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-02-11T19:42:44.844Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-02-11T19:42:44.845Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ameer-taweel (Personal Website) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

@@ -2,30 +2,38 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Ameer Taweel"
 subtitle = "TODO"
-theme = "terminal"
-
-# Metadata
-owner = "Ameer Taweel"
-keywords = ""
-copyright = "Ameer Taweel"
-menuMore = "Show more"
-readMore = "Read more"
-readOtherPosts = "Read other posts"
-newerPosts = "Newer posts"
-olderPosts = "Older posts"
-missingContentMessage = "Page not found..."
-missingBackButtonLabel = "Back to home page"
+theme = "hugo-coder"
 
 [params]
 
-centerTheme = true
-logo.logoText = "Ameer Taweel"
-logo.logoHomeLink = "/"
+author = "Ameer Taweel"
+info = "Computer Engineer That Writes Code For Fun"
+description = "John Doe's personal website"
+keywords = "blog,developer,personal"
+avatarurl = "images/avatar.jpg"
 
-[menu]
+# favicon_32 = "/img/favicon-32x32.png"
+# favicon_16 = "/img/favicon-16x16.png"
 
-[[menu.main]]
+since = 2022
 
-identifier = "about"
-name = "About"
-url = "/about"
+colorScheme = "dark"
+hidecolorschemetoggle = false
+
+[[params.social]]
+name = "GitHub"
+icon = "fa fa-2x fa-github"
+weight = 1
+url = "https://github.com/Ameer Taweel/"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+weight = 2
+url = "https://www.linkedin.com/in/ameer-taweel/"
+
+[[params.social]]
+name = "Email"
+icon = "fa fa-2x fa-envelope"
+weight = 3
+url = "mailto:ameertaweel2002@gmail.com"
