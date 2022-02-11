@@ -1,14 +1,13 @@
 baseURL = "https://ameertaweel.github.io"
 languageCode = "en-us"
 title = "Ameer Taweel"
-subtitle = "TODO"
 theme = "hugo-coder"
 
 [params]
 
 author = "Ameer Taweel"
-info = "IComputer Engineer That Writes Code For Fun"
-description = "John Doe's personal website"
+info = "Computer Engineer That Writes Code For Fun"
+description = "Ameer Taweel's personal website"
 keywords = "blog,developer,personal"
 avatarurl = "images/avatar.jpg"
 
