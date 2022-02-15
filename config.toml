@@ -36,3 +36,9 @@ name = "Email"
 icon = "fa fa-2x fa-envelope"
 weight = 3
 url = "mailto:ameertaweel2002@gmail.com"
+
+[[params.social]]
+name = "Dotfiles"
+icon = "fa fa-2x fa-gear"
+weight = 4
+url = "https://github.com/AmeerTaweel/dotfiles"
