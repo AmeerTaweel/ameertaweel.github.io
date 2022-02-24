@@ -42,3 +42,8 @@ name = "Dotfiles"
 icon = "fa fa-2x fa-gear"
 weight = 4
 url = "https://github.com/AmeerTaweel/dotfiles"
+
+[[menu.main]]
+name = "Projects"
+weight = 1
+url = "projects/"
