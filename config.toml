@@ -47,3 +47,8 @@ url = "https://github.com/AmeerTaweel/dotfiles"
 name = "Projects"
 weight = 1
 url = "projects/"
+
+[[menu.main]]
+name = "Certificates"
+weight = 2
+url = "certificates/"
