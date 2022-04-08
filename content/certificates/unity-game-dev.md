@@ -15,8 +15,12 @@ The specialization consists of five courses:
 4. [Build a 3D Platformer][course-4]
 5. [Captsone Project][course-5]
 
-I have completed the first course so far
-[(View Certificate)][course-1-certificate] and started taking the second one.
+I have completed the first two course so far:
+
+1. [View Course 1 Certificate][course-1-certificate]
+2. [View Course 2 Certificate][course-2-certificate]
+
+I started taking the third course.
 
 [coursera]: https://www.coursera.org/
 [michigan-state-university]: https://msu.edu/
@@ -27,3 +31,4 @@ I have completed the first course so far
 [course-4]: https://www.coursera.org/learn/game-design-and-development-4?specialization=game-design-and-development
 [course-5]: https://www.coursera.org/learn/game-design-and-development-5?specialization=game-design-and-development
 [course-1-certificate]: https://coursera.org/share/75dffebcd1618e38946568fb81ca90c1
+[course-2-certificate]: https://coursera.org/share/ec4358c2e35cfaea37e842dd000df7c8
