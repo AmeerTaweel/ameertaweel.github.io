@@ -13,13 +13,14 @@ The specialization consists of four courses:
 3. [Decentralized Applications (Dapps)][course-3]
 4. [Blockchain Platforms][course-4]
 
-I have completed the first three course so far:
+I have completed all the four courses of the specialization successfully.
 
 1. [View Course 1 Certificate][course-1-certificate]
 2. [View Course 2 Certificate][course-2-certificate]
 3. [View Course 3 Certificate][course-3-certificate]
+4. [View Course 4 Certificate][course-4-certificate]
 
-I started taking the fourth course.
+Also, you can view the specialization's certificate [here][specialization-certificate].
 
 [coursera]: https://www.coursera.org/
 [university-at-buffalo]: http://www.buffalo.edu/
@@ -31,3 +32,5 @@ I started taking the fourth course.
 [course-1-certificate]: https://coursera.org/share/b67a9e440c74018c605ae840c9c57773
 [course-2-certificate]: https://coursera.org/share/c49eae1bfb9b8fda0037a4ffecdff57f
 [course-3-certificate]: https://coursera.org/share/0ea906fb71607f294a7091ddd048801d
+[course-4-certificate]: https://coursera.org/share/4a4cad6c87a62ce1505923d070347a6b
+[specialization-certificate]: https://coursera.org/share/ccdbacccf778618074f96112e360cf40
