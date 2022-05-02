@@ -29,8 +29,8 @@ Also, you can view the specialization's certificate [here][specialization-certif
 [course-2]: https://www.coursera.org/learn/smarter-contracts?specialization=blockchain
 [course-3]: https://www.coursera.org/learn/decentralized-apps-on-blockchain?specialization=blockchain
 [course-4]: https://www.coursera.org/learn/blockchain-platforms?specialization=blockchain
-[course-1-certificate]: https://coursera.org/share/b67a9e440c74018c605ae840c9c57773
-[course-2-certificate]: https://coursera.org/share/c49eae1bfb9b8fda0037a4ffecdff57f
-[course-3-certificate]: https://coursera.org/share/0ea906fb71607f294a7091ddd048801d
-[course-4-certificate]: https://coursera.org/share/4a4cad6c87a62ce1505923d070347a6b
-[specialization-certificate]: https://coursera.org/share/ccdbacccf778618074f96112e360cf40
+[course-1-certificate]: https://www.coursera.org/account/accomplishments/certificate/8SPAY6QVTAK3
+[course-2-certificate]: https://www.coursera.org/account/accomplishments/certificate/G2RAGC7D78GU
+[course-3-certificate]: https://www.coursera.org/account/accomplishments/certificate/LSEU839AFSV2
+[course-4-certificate]: https://www.coursera.org/account/accomplishments/certificate/S3E7JL3LXMWL
+[specialization-certificate]: https://www.coursera.org/account/accomplishments/specialization/certificate/D6CRLH96E2JT
